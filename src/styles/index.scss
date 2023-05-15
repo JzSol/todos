@@ -1,0 +1,38 @@
+iframe {
+  display: none;
+}
+html {
+  background: linear-gradient(
+    to right,
+    rgba(44, 83, 100, 0.8),
+    rgba(32, 58, 67, 0.6),
+    rgba(15, 32, 39, 0.4)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(44, 83, 100, 0.8),
+    rgba(32, 58, 67, 0.6),
+    rgba(15, 32, 39, 0.4)
+  );
+}
+body {
+  min-width: 230px;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.notification {
+  transition-property: opacity, min-height;
+  transition-duration: 1s;
+  min-height: 36px;
+}
+
+.notification.hidden {
+  min-height: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@import './todoapp';
+@import './todo';
+@import './filter';
