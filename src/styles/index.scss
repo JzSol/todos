@@ -2,6 +2,8 @@ iframe {
   display: none;
 }
 html {
+  overflow-y: hidden;
+
   background: linear-gradient(
     to right,
     rgba(44, 83, 100, 0.8),

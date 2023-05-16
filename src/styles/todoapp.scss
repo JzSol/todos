@@ -4,8 +4,9 @@
   font-weight: 300;
   color: #4d4d4d;
   margin: 40px 20px;
-
   &__content {
+    border-top-left-radius: 2.5%;
+    border-top-right-radius: 2.5%;
     margin-bottom: 20px;
     background: #fff;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
@@ -16,10 +17,6 @@
     font-weight: 100;
     text-align: center;
     color: #ffd700;
-    // color: rgba(175, 47, 47, 0.15);
-    // -webkit-text-rendering: optimizeLegibility;
-    // -moz-text-rendering: optimizeLegibility;
-    // text-rendering: optimizeLegibility;
   }
 
   &__header {

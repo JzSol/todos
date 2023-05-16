@@ -1,25 +1,37 @@
+import classNames from 'classnames';
+import { useState } from 'react';
+
 export const Footer = () => {
+  const [selected, setSelected] = useState('all');
   return (
     <footer className='todoapp__footer'>
       <span className='todo-count'>3 items left</span>
 
-      {/* Active filter should have a 'selected' class */}
       <nav className='filter'>
         <a
           href='#/'
-          className='filter__link selected'>
+          className={classNames('filter__link', {
+            selected: selected === 'all',
+          })}
+          onClick={() => setSelected('all')}>
           All
         </a>
 
         <a
           href='#/active'
-          className='filter__link'>
+          className={classNames('filter__link', {
+            selected: selected === 'active',
+          })}
+          onClick={() => setSelected('active')}>
           Active
         </a>
 
         <a
           href='#/completed'
-          className='filter__link'>
+          className={classNames('filter__link', {
+            selected: selected === 'completed',
+          })}
+          onClick={() => setSelected('completed')}>
           Completed
         </a>
       </nav>
